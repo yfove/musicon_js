@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Musicon</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body id="home">
-  <div id="header">
-    <div class="container">
-      <div id="brand">
-        <h1>Musicon</h1>
-      </div>
-      <div id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="store.html">Store</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musicon</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  <div id="introduction">
-    <div class="container">
-      <h1>Welcome to Musicon</h1>
-      <p>Musicon is a concise and interactive musical instruments storefront on the web.</p>
-      <a href="store.html" id="button">Shop Now</a>
+  <body id="home">
+    <div class="overlay"></div>
+
+    <div class="header">
+      <div class="container">
+        <div class="branding">
+          <h1>Musicon</h1>
+        </div>
+
+        <div class="nav">
+          <ul class="navbar">
+            <li class="current">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="store.html">Store</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  <script src="main.js"></script>
-</body>
+
+    <div id="introduction">
+      <div class="container" id="home-information">
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; Musicon 2018</p>
+    </footer>
+
+    <script id="home-template" type="text/x-handlebars-template">
+      <h1>{{title}}</h1>
+      <p>{{body}}</p>
+      <a href="store.html">Shop Now</a>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
